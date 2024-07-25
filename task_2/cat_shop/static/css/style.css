@@ -1,0 +1,201 @@
+@import url("main.css");
+body{
+    padding: 30px;
+}
+
+/* Основные стили страницы */
+.page {
+    background-color: #fafafa;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    background-color: #f4f4f4;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2c3e50;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.header input[type="text"]:focus {
+    border-color: #8c7b75;
+    box-shadow: 0 0 5px rgba(140, 123, 117, 0.5);
+}
+
+.header select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2c3e50;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.header select:focus {
+    border-color: #8c7b75;
+    box-shadow: 0 0 5px rgba(140, 123, 117, 0.5);
+}
+
+.header button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 1px solid #2c3e50;
+    background-color: #8c7b75;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.header button:hover {
+    background-color: #6e635d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header button:active {
+    background-color: #5b4f48;
+    transform: translateY(1px);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.cats__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.cats ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cats li {
+    flex: 1 1 calc(20% - 20px);
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cats li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cats li a {
+    text-decoration: none;
+    color: #2c3e50;
+    display: block;
+    padding: 10px;
+}
+
+.cats li h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.cats li img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.cats li p {
+    margin: 10px 0;
+    font-size: 1em;
+    padding: 0 10px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Стили для навигации */
+.cats > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.cats > div a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.cats > div a:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cats > div span {
+    font-size: 1em;
+    color: #2c3e50;
+}
+
+/* Flexbox для выравнивания содержимого */
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
